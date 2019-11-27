@@ -353,7 +353,7 @@ public class JsFastFoodSell extends JFrame {
 					for(int i=0; i<idx; i++) {
 						sum += Double.parseDouble(table.getValueAt(i, 2).toString());
 					}			
-					lblMent.setText("총가격은 "+sum+ "달러 입니다");	
+					lblMent.setText("총가격은 "+sum+ "달러 입니다.");	
 					}
 				}
 			   comboBox.setSelectedIndex(0);
