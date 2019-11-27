@@ -372,7 +372,8 @@ public class JsFastFoodSell extends JFrame {
 			if(response==JOptionPane.YES_OPTION) {				
 				JOptionPane.showMessageDialog(JsFastFoodSell.this, "주문하신 상품이 구매되었습니다.");	
 				int idx=table.getRowCount();
-				int minus =0;
+				int amount=0;
+				int minus=0;
 				for(int i=0; i<idx;) {
 						minus = Integer.parseInt(table.getValueAt(i, 1).toString());
 						menuname=table.getValueAt(i, 0).toString();
