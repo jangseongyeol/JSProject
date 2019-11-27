@@ -599,33 +599,6 @@ public class JsFastFoodSell extends JFrame {
 		cols.add("수량");
         
 		
-//		model1=new DefaultTableModel(dao.listFastFood(),cols);		
-//        table_1.setModel(model1);
-//
-//		tfHambuger.setText(table_1.getValueAt(0, 1)+"");
-//		tfHambugerP.setText( table_1.getValueAt(0, 2)+"");
-//		tfHotdog.setText(table_1.getValueAt(1, 1)+"");
-//		tfHotdogP.setText(table_1.getValueAt(1, 2)+"");
-//		tfTacos.setText(table_1.getValueAt(2, 1)+"");
-//		tfTacosP.setText(table_1.getValueAt(2, 2)+"");
-//		tfPizzaS.setText(table_1.getValueAt(3, 1)+"");
-//		tfPizzaSP.setText(table_1.getValueAt(3, 2)+"");
-//		tfCola.setText(table_1.getValueAt(4, 1)+"");
-//		tfColaP.setText(table_1.getValueAt(4, 2)+"");
-//		tfCoffee.setText(table_1.getValueAt(5, 1)+"");
-//		tfCoffeeP.setText(table_1.getValueAt(5, 2)+"");
-//		tfIcecream.setText(table_1.getValueAt(6, 1)+"");
-//		tfIcecreamP.setText(table_1.getValueAt(6, 2)+"");
-//		tfPotato.setText(table_1.getValueAt(7, 1)+"");
-//		tfPotatoP.setText(table_1.getValueAt(7, 2)+"");
-//		tfSet1.setText(table_1.getValueAt(8, 1)+"");
-//		tfSet1P.setText(table_1.getValueAt(8, 2)+"");
-//		tfSet2.setText(table_1.getValueAt(9, 1)+"");
-//		tfSet2P.setText(table_1.getValueAt(9, 2)+"");
-//		tfSet3.setText(table_1.getValueAt(10, 1)+"");
-//		tfSet3P.setText(table_1.getValueAt(10, 2)+"");
-//		tfPizzaLage.setText(table_1.getValueAt(11, 1)+"");
-//		tfPizzaLageP.setText(table_1.getValueAt(11, 2)+"");
 
 		dao=new JsFastFoodDAO();
 		model1=new DefaultTableModel(dao.listFastFood(),cols);
