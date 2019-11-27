@@ -367,10 +367,6 @@ public class JsFastFoodSell extends JFrame {
 		btnbuy.setBounds(509, 560, 114, 53);
 		btnbuy.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				String menuname=tfMenu.getText();
-				double price=Double.parseDouble(tfPrice.getText());
-				int amount=Integer.parseInt(combonum);
-				String tot=String.valueOf(price*amount);
 			int response=JOptionPane.showConfirmDialog
 					(JsFastFoodSell.this, lblMent.getText()+" 구매하시겠습니까?");			
 			if(response==JOptionPane.YES_OPTION) {				
@@ -383,7 +379,7 @@ public class JsFastFoodSell extends JFrame {
 						int a=dao.menuName(menuname).getAmount();
 					    amount=a-minus;
 						dto=new JsFastFoodDTO(menuname, amount);
-						int result=dao.updateAmount(dto);
+						int result=dao.updateAmountm(dto);
 						i++;
 					}
 				Vector list=new Vector();
@@ -678,11 +674,6 @@ public class JsFastFoodSell extends JFrame {
 		btnNewButton = new JButton("메뉴삭제");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-//				DefaultTableModel model=(DefaultTableModel) table.getModel();
-//				int selectidx=table.getSelectedRow();
-//				model.removeRow(selectidx);
-				
-				
 				DefaultTableModel model=(DefaultTableModel) table.getModel();
 				int response=JOptionPane.showConfirmDialog
 						(JsFastFoodSell.this, "선택하신 메뉴를 삭제 하시겠습니까?");	

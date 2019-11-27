@@ -261,5 +261,32 @@ public class JsFastFoodDAO {
 		return result;
 	}//end updateAmount()
 	
+	public int updateAmountm(JsFastFoodDTO dto) {
+		int result=0;
+		Connection conn=null;
+		PreparedStatement pstmt=null;
+		try {
+			conn=DB.dbConn();
+			String sql="update fastfood set amount=? where menuname=?";
+			pstmt=conn.prepareStatement(sql);
+			pstmt.setInt(1, dto.getAmount());
+			pstmt.setString(2, dto.getMenuname());
+			result=pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if(pstmt!=null) pstmt.close();
+			} catch (Exception e2) {
+				e2.printStackTrace();
+			} try {
+				if(conn!=null) conn.close();
+			} catch (Exception e2) {
+				e2.printStackTrace();
+			}
+		}//finally
+		return result;
+	}//end updateAmountm()
+	
 	
 }
